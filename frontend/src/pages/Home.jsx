@@ -9,12 +9,18 @@ export default function Home() {
                 <div className="flex gap-3">
                     <Link
                         to="/login"
+                        state={{
+                            activeTab: 'login'
+                        }}
                         className="inline-flex items-center px-6 py-2 bg-green-600 text-white rounded-md font-semibold hover:bg-green-700 transition-colors"
                     >
                         Login
                     </Link>
                     <Link
-                        to="/register"
+                        to="/login"
+                        state={{
+                            activeTab: 'register'
+                        }}
                         className="inline-flex items-center px-6 py-2 border-1 border-green-600 text-green-600 rounded-md font-semibold hover:bg-green-50 transition-colors"
                     >
                         Register
